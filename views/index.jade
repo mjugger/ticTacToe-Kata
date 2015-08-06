@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	table(ng-controller="t3Board").board
+		tr
+			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove($event)")
+		tr
+			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove($event)")
+		tr
+			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove($event)")
