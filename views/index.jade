@@ -5,14 +5,14 @@ block content
 	p Welcome to #{title}
 	table(ng-controller="t3Board").board
 		tr
-			td(ng-click="humanMove($event)")
-			td(ng-click="humanMove($event)")
-			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove(0)") {{t3Board[0]}}
+			td(ng-click="humanMove(1)") {{t3Board[1]}}
+			td(ng-click="humanMove(2)") {{t3Board[2]}}
 		tr
-			td(ng-click="humanMove($event)")
-			td(ng-click="humanMove($event)")
-			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove(3)") {{t3Board[3]}}
+			td(ng-click="humanMove(4)") {{t3Board[4]}}
+			td(ng-click="humanMove(5)") {{t3Board[5]}}
 		tr
-			td(ng-click="humanMove($event)")
-			td(ng-click="humanMove($event)")
-			td(ng-click="humanMove($event)")
+			td(ng-click="humanMove(6)") {{t3Board[6]}}
+			td(ng-click="humanMove(7)") {{t3Board[7]}}
+			td(ng-click="humanMove(8)") {{t3Board[8]}}

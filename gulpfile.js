@@ -24,7 +24,7 @@ gulp.task('bower-styles',function(){
 });
 
 gulp.task('watch',function(){
-	gulp.watch('scripts');
+	gulp.watch('lib/javascripts/*.js',['scripts']);
 });
 
 gulp.task('default',['scripts','bower-scripts','bower-styles','watch']);
