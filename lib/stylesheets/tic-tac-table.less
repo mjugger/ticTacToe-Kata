@@ -1,23 +1,30 @@
 .board {
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	margin:auto;
+	// position:absolute;
+	// left:0;
+	// right:0;
+	// top:0;
+	// bottom:0;
+	//margin:auto;
     border-collapse: separate; border-spacing: 5px; 
 	width:300px;
 	height:300px;
 
 	td {
-    	border:1px solid gray;
     	text-align:center;
     	min-width:100px;
     	min-height:100px;
-    	&:hover {
-    		background-color:#eeeeee;
-    		cursor:pointer;
-		}
+	}
+
+	.btn-blank {
+		background-color: #dddddd;
+	}
+
+	.human-active {
+		background-color: rgb(16,108,200);
+	}
+
+	.cpu-active {
+		background-color: rgb(255,82,82);
 	}
 
 }
