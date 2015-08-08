@@ -1,13 +1,16 @@
+.height-100pt {
+	height:100%;
+}
+
 .board {
-	// position:absolute;
-	// left:0;
-	// right:0;
-	// top:0;
-	// bottom:0;
-	//margin:auto;
     border-collapse: collapse;
 	width:500px;
 	height:500px;
+
+	@media only screen and (max-device-width: 767px){
+		width:100%;
+		height:100%;
+	}
 
 	td {
     	text-align:center;
