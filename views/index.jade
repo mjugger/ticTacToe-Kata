@@ -4,28 +4,29 @@ block content
 	h1= title
 	p Welcome to #{title}
 	div(layout="row" layout-align="center center")
-		table(ng-controller="t3Board").board
-			tr
-				td(ng-click="humanMove(0)") 
-					md-button(ng-class="activeClass(t3Board[0])").md-fab {{t3Board[0]}}
-				td(ng-click="humanMove(1)")
-					md-button(ng-class="activeClass(t3Board[1])").md-fab  {{t3Board[1]}}
-				td(ng-click="humanMove(2)")
-					md-button(ng-class="activeClass(t3Board[2])").md-fab  {{t3Board[2]}}
-			tr
-				td(ng-click="humanMove(3)")
-					md-button(ng-class="activeClass(t3Board[3])").md-fab  {{t3Board[3]}}
-				td(ng-click="humanMove(4)") 
-					md-button(ng-class="activeClass(t3Board[4])").md-fab  {{t3Board[4]}}
-				td(ng-click="humanMove(5)")
-					md-button(ng-class="activeClass(t3Board[5])").md-fab  {{t3Board[5]}}
-			tr
-				td(ng-click="humanMove(6)")
-					md-button(ng-class="activeClass(t3Board[6])").md-fab {{t3Board[6]}}
-				td(ng-click="humanMove(7)")
-					md-button(ng-class="activeClass(t3Board[7])").md-fab  {{t3Board[7]}}
-				td(ng-click="humanMove(8)")
-					md-button(ng-class="activeClass(t3Board[8])").md-fab  {{t3Board[8]}}
-		
-	div(layout="row" layout-align="center center")
-		md-button.md-raised Button
+		md-card
+			table(ng-controller="t3Board").board
+				tr
+					td(ng-click="humanMove(0)") 
+						md-button(ng-class="activeClass(t3Board.board[0])").md-fab {{t3Board.board[0]}}
+					td(ng-click="humanMove(1)")
+						md-button(ng-class="activeClass(t3Board.board[1])").md-fab  {{t3Board.board[1]}}
+					td(ng-click="humanMove(2)")
+						md-button(ng-class="activeClass(t3Board.board[2])").md-fab  {{t3Board.board[2]}}
+				tr
+					td(ng-click="humanMove(3)")
+						md-button(ng-class="activeClass(t3Board.board[3])").md-fab  {{t3Board.board[3]}}
+					td(ng-click="humanMove(4)") 
+						md-button(ng-class="activeClass(t3Board.board[4])").md-fab  {{t3Board.board[4]}}
+					td(ng-click="humanMove(5)")
+						md-button(ng-class="activeClass(t3Board.board[5])").md-fab  {{t3Board.board[5]}}
+				tr
+					td(ng-click="humanMove(6)")
+						md-button(ng-class="activeClass(t3Board.board[6])").md-fab {{t3Board.board[6]}}
+					td(ng-click="humanMove(7)")
+						md-button(ng-class="activeClass(t3Board.board[7])").md-fab  {{t3Board.board[7]}}
+					td(ng-click="humanMove(8)")
+						md-button(ng-class="activeClass(t3Board.board[8])").md-fab  {{t3Board.board[8]}}
+			md-card-content
+				div(layout="row" layout-align="center center" ng-controller="btn")
+					md-button(ng-class="restartGame()",ng-click="playAgain()").md-raised.reset-btn Play again?
