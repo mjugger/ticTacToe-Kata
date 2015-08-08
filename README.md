@@ -7,7 +7,7 @@ npm install
 ```
 then
 ```
-npm start
+npm start or node ./bin/www
 ```
 to start the express server.
 
