@@ -2,6 +2,14 @@ var gulp           = require('gulp');
 var concat         = require('gulp-concat');
 var uglify         = require('gulp-uglify');
 var mainBowerFiles = require('main-bower-files');
+var karmaRunner    = require('karma').Server;
+
+gulp.task('karmaJasmine-test',function(done){
+	new karmaRunner({
+		configFile: __dirname + '/karma.config.js',
+		singleRun:false
+	},done).start();
+});
 
 gulp.task('scripts',function(){
 	return gulp.src('lib/javascripts/*.js')
@@ -27,4 +35,4 @@ gulp.task('watch',function(){
 	gulp.watch('lib/javascripts/*.js',['scripts']);
 });
 
-gulp.task('default',['scripts','bower-scripts','bower-styles','watch']);
+gulp.task('default',['scripts','bower-scripts','karmaJasmine-test','bower-styles','watch']);
