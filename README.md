@@ -1,5 +1,7 @@
 # ticTacToe-Kata
-CMG Tic tac toe Kata solution
+Tic tac toe Kata solution
+###DEMO
+[games.t3.juggerlabs.io](http://games.t3.juggerlabs.io)
 ###Installation instructions
 To install run:
 ```
