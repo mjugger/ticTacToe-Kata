@@ -31,13 +31,13 @@ block content
 			md-card-content
 				div(layout="row" layout-align="center center" ng-controller="btn")
 					md-button(ng-class="restartGame()",ng-click="playAgain()").md-raised.reset-btn Play again?
-			
-			md-divider
-			md-card-content(layout="row" layout-align="space-around center")
-					div(layout="column" layout-align="space-around center")
-						md-button.md-fab.md-mini.human-active O
-						div.md-body-1 0
-					md-button.md-fab wins
-					div(layout="column" layout-align="space-around center")
-						md-button.md-fab.md-mini.cpu-active X
-						div.md-body-1 0
+			//
+				md-divider
+				md-card-content(layout="row" layout-align="space-around center")
+						div(layout="column" layout-align="space-around center")
+							md-button.md-fab.md-mini.human-active O
+							div.md-body-1 0
+						md-button.md-fab wins
+						div(layout="column" layout-align="space-around center")
+							md-button.md-fab.md-mini.cpu-active X
+							div.md-body-1 0
