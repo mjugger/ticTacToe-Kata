@@ -35,4 +35,4 @@ gulp.task('watch',function(){
 	gulp.watch('lib/javascripts/*.js',['scripts']);
 });
 
-gulp.task('default',['scripts','bower-scripts','karmaJasmine-test','bower-styles','watch']);
+gulp.task('default',gulp.series('scripts','bower-scripts','karmaJasmine-test','bower-styles','watch'));
